@@ -51,6 +51,11 @@ public class BouncingBall
         canvas = drawingCanvas;
     }
 
+    public BouncingBall(int xPos, int yPos, int ballDiameter, Color ballColor, int groundPos, Canvas drawingCanvas, int speed) {
+        this(xPos, yPos, ballDiameter, ballColor, groundPos, drawingCanvas);
+        ySpeed = speed;
+    }
+
     /**
      * Draw this ball at its current position onto the canvas.
      **/
